@@ -1,0 +1,25 @@
+<% layout('./layouts/boilerplate')%>
+    <article class="portfolio-intro">
+        <!-- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' -->
+        <h1>My Portfolio</h1>
+        <!-- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui
+            sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+    </article>
+
+    <article class="portfolio-project-thumbs">
+        <div class="projects-box box grid">
+            <!-- Loop over the projects in your data file-->
+
+            <!-- Use the example code below and interpolated template literals as needed to dynamically generate: -->
+            <!-- The paths in the link's href and img's src attributes  -->
+            <!-- The text 'Thumbnail' interpolated with the project title for the img's alt attribute -->
+            <!-- The project title for the h5 element's text -->
+            <div class="cell">
+                <a href="#">
+                    <img class="thumbnail" src="https://placehold.it/550x550" alt="Thumbnail of project">
+                    <h5>My Site</h5>
+                </a>
+            </div>
+        </div>
+    </article>

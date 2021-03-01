@@ -1,0 +1,40 @@
+<% layout('./layouts/boilerplate')%>
+    <nav class="nav">
+        <a href="/"><span>&larr;</span> Back</a>
+    </nav>
+
+    <article class="portfolio-projects">
+        <div class="inner-wrapper flex-row-wrap two-col">
+            <div class="project-info-box box">
+                <!-- Use the info in your data file and the comments below to complete this template -->
+                <!-- Use interpolation to dynamically add the project title -->
+                <h1>Project Name</h1>
+                <!-- Use interpolation to dynamically add the project description -->
+                <p> Description Info. Lorem ipsum dolor amet. Tumblr health goth culpa forage prism kinfolk. Excepteur
+                    church-key kogi thundercats, id tilde unicorn live-edge. Before they sold out et quinoa cornhole
+                    nostrud, tbh green juice letterpress try-hard excepteur iPhone raw denim four loko hot chicken 3
+                    wolf moon</p>
+            </div>
+            <div class="project-tech-links-box box">
+                <h6>Technologies</h6>
+                <ul>
+                    <!-- Use a loop and interpolation to dynamically replace the li tags below with the technologies listed for this project -->
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <!-- Add the href values to the links below -->
+                <a class="btn-link" href="">Live Demo</a>
+                <a class="btn-link" href="">GitHub Repo</a>
+            </div>
+        </div>
+        <div class="project-img-box box">
+            <!-- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes -->
+            <img class="project-img" src="https://placehold.it/1200x550" alt="Screen capture of project">
+            <img class="project-img" src="https://placehold.it/1200x550" alt="Screen capture of project">
+            <img class="project-img" src="https://placehold.it/1200x550" alt="Screen capture of project">
+        </div>
+        <nav class="nav">
+            <a href="/"><span>&larr;</span> Back</a>
+        </nav>
+    </article>

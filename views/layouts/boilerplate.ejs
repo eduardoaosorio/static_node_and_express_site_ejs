@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+
+    <div class="sidebar" id="my-info">
+        <div class="sidebar-info-box">
+            <br>
+            <div class="thumbnail-box">
+                <img class="thumbnail" src="https://placehold.it/550x350" alt="Profile Pic">
+            </div>
+            <div class="dev-intro-box">
+                <h5>Eduardo Osorio</h5>
+                <!-- Replace with description of who you are, what you do, and why you are so awesome -->
+                <p>Lorem ipsum dolor amet in ad trust fund dolore pickled. Godard taiyaki bitters chartreuse artisan
+                    sriracha. Synth minim flannel godard small batch, woke craft beer af kogi sriracha. Cornhole
+                    portland esse YOLO fixie.</p>
+                <!-- Add path from your '/about' route handler to the href below -->
+                <a href="">Learn More &rarr;</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="header-info-box">
+                <button class="menu-icon" id="menu-icon" type="button" data-toggle="my-info"></button>
+                <span>Eduardo Osorio</span>
+            </div>
+        </div>
+
+        <%- body %>
+
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

@@ -8,7 +8,7 @@ app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-app.use(express.urlencoded({ extended: true }));
+// Middleware to serve static files
 app.use("/static", express.static(path.join(__dirname, "public")));
 
 // Index route
@@ -27,12 +27,14 @@ app.get("/projects/:id", (req, res, next) => {
   res.render("project", { project });
 });
 
+// 404 handler
 app.use((req, res, next) => {
   const err = new Error("Page Not Found");
   err.status = 404;
   next(err);
 });
 
+// Custom error handler
 app.use((err, req, res, next) => {
   if (!err.status) err.status = 500;
   if (!err.message) err.message = "Something went wrong!";

@@ -1,0 +1,7 @@
+<% layout('./layouts/boilerplate')%>
+    <!-- display the error's message, status, and optionally, the stack properties -->
+    <div class="error-container">
+        <h1><%= err.message %></h1>
+        <p>Status: <%= err.status %></p>
+        <p id="error-stack"><%= err.stack %></p>
+    </div>

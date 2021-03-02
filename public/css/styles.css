@@ -1,3 +1,12 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 
 /*
   Main styles
@@ -17,7 +26,6 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -31,25 +39,11 @@ article {
   background: #fefefe;
 }
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+h1 {
+  font-weight: 900;
 }
 
-h5{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  letter-spacing: 2.5px;
-  -webkit-text-transform: uppercase;
-  text-transform: uppercase;
-}
-
-h6{
-  letter-spacing: 2.5px;
-  -webkit-text-transform: uppercase;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-p{
+p {
   font-size: 15px;
   color: #666;
 }
@@ -94,13 +88,11 @@ a {
 .box h6 {
   font-size: 1rem;
   font-weight: bolder;
-  letter-spacing: 2px;
 }
 
 .box li {
   font-size: 13px;
 }
-
 
 /*
   Sidebar and mobile header
@@ -114,12 +106,9 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: #555; 
+  font-size: 1rem;
+  color: #555;
 }
 
 nav a span {
@@ -167,15 +156,12 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: #999;
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
   color: #555;
 }
 
@@ -209,7 +195,7 @@ nav a span {
 }
 
 .header button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 40%;
   left: 0;
@@ -217,7 +203,6 @@ nav a span {
   height: 2px;
   background: #fefefe;
 }
-
 
 /*
   Home page styles
@@ -242,12 +227,9 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 13px;
-  letter-spacing: 2.25px;
-  text-transform: uppercase;
-  color: #222;;
+  color: #222;
   margin: 0 auto 8px;
 }
 
@@ -261,7 +243,6 @@ nav a span {
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
-
 
 /* 
   About and project pages styles 
@@ -296,10 +277,36 @@ nav a span {
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
+  background-color: #000;
   border: 1px solid transparent;
 }
 
+/* 
+  Error page styles
+*/
+.error-container {
+  max-width: 1200px;
+  padding: 40px 50px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.error-container h1 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  margin: 0 auto 8px;
+}
+
+.error-container p {
+  text-rendering: optimizeLegibility;
+  font-size: 125%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#error-stack {
+  font-size: 0.7rem;
+}
 
 /* 
   Tablet layout styles 
@@ -310,6 +317,10 @@ nav a span {
   }
 
   .portfolio-intro h1 {
+    font-size: 3rem;
+  }
+
+  .error-container h1 {
     font-size: 3rem;
   }
 
@@ -332,14 +343,13 @@ nav a span {
   }
 
   .cell h5 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
-
 
 /* 
   Desktop layout styles 

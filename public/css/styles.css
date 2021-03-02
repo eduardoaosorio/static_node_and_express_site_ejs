@@ -29,14 +29,14 @@ body {
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
-  background: #fefefe;
+  background: #fff;
   background: #000;
   transform: translateX(0px);
   transition: all 0.4s ease-out;
 }
 
 article {
-  background: #fefefe;
+  background: #fff;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 
 p {
   font-size: 15px;
-  color: #666;
+  color: #656565;
 }
 
 a {
@@ -57,7 +57,7 @@ a {
   min-width: 320px;
   height: 100%;
   min-height: 100%;
-  background: #fefefe;
+  background: #fff;
 }
 
 .flex-row-wrap {
@@ -76,7 +76,7 @@ a {
   width: 100%;
   max-width: 1200px;
   padding: 40px 50px 30px;
-  background: #fefefe;
+  background: #fff;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -91,7 +91,7 @@ a {
 }
 
 .box li {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /*
@@ -148,7 +148,7 @@ nav a span {
 }
 
 .sidebar h5 {
-  color: #fefefe;
+  color: #fff;
   margin: 0 auto 0.5rem;
 }
 
@@ -167,7 +167,7 @@ nav a span {
 
 .header {
   vertical-align: middle;
-  color: #fefefe;
+  color: #fff;
   height: 40px;
   padding: 0.5rem;
   background: #0a0a0a;
@@ -190,8 +190,8 @@ nav a span {
   background: #0a0a0a;
   margin-top: 3px;
   margin-right: 10px;
-  border-top: 2px solid #fefefe;
-  border-bottom: 2px solid #fefefe;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 .header button:after {
@@ -201,7 +201,7 @@ nav a span {
   left: 0;
   width: 20px;
   height: 2px;
-  background: #fefefe;
+  background: #fff;
 }
 
 /*
@@ -259,6 +259,7 @@ nav a span {
 
 .skills-contact-box ul {
   margin-bottom: 35px;
+  word-break: break-all;
 }
 
 .project-img {
@@ -272,7 +273,7 @@ nav a span {
 .btn-link {
   display: block;
   text-align: center;
-  color: #fefefe;
+  color: #fff;
   width: 100%;
   max-width: 255px;
   margin: auto 0 5px 0;
@@ -371,5 +372,9 @@ nav a span {
 
   .inner-wrapper {
     max-width: 1200px;
+  }
+
+  .box li {
+    font-size: 13px;
   }
 }

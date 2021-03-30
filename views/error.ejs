@@ -1,6 +1,11 @@
 <% layout('./layouts/boilerplate')%>
+    <nav class="nav">
+        <a href="/"><span>&larr;</span> Back</a>
+    </nav>
     <div class="error-container">
         <h1><%= err.message %></h1>
         <p>Status: <%= err.status %></p>
+        <% if (process.env.NODE_ENV !=="production" ) {%>
         <p id="error-stack"><%= err.stack %></p>
+        <% }%>
     </div>

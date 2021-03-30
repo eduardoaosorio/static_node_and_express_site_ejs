@@ -1,4 +1,4 @@
-# static_node_and_express_site
+# static_node_and_express_site_ejs
 
 ## Description
 

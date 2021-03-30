@@ -16,7 +16,9 @@
                     <li><%= technology %> </li>
                     <% } %> 
                 </ul>
+                <% if (project.liveLink) {%> 
                 <a class="btn-link" target="_blank" href="<%= project.liveLink %>">Live Demo</a>
+                <% } %> 
                 <a class="btn-link" target="_blank" href="<%= project.githubLink %>">GitHub Repo</a>
             </div>
         </div>

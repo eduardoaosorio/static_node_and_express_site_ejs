@@ -82,7 +82,7 @@
     {
       "id": 3,
       "name": "OOP Game",
-      "description": "This is a browser-based version of the game: \"Phrase Hunter\". The game is written in plain JavaScript using OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters either on the game's onscreen keyboard or their physical keyboard. \nThe game uses two JavaScript classes with specific properties and methods. A Game class for managing the game, and a Phrase class to help with creating an array of Phrase objects. \nThe program chooses a random phrase, splits it into letters, and puts these on the gameboard. \nEach time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the gameboard displays the chosen letters on the screen. \nThe player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose). \nIf the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears. \nA player can guess a letter only once. After they've guessed a letter, the program will disable that letter on the onscreen keyboard.",
+      "description": "This is a browser-based version of the game: \"Phrase Hunter\". The game is written in plain JavaScript using OOP (Object-Oriented Programming) to select a random, hidden phrase, which a player tries to guess, by clicking letters either on the game's onscreen keyboard or their physical keyboard. \nThe game uses two JavaScript classes with specific properties and methods. A Game class for managing the game, and a Phrase class to help with creating an array of Phrase objects. \nThe program chooses a random phrase, splits it into letters, and puts these on the game-board. \nEach time the player guesses a letter, the program compares the letter the player has chosen with the random phrase. If the letter is in the phrase, the game-board displays the chosen letters on the screen. \nThe player continues to select letters until they guess the phrase (and win), or make five incorrect guesses (and lose). \nIf the player completes the phrase before they run out of guesses, a winning screen appears. If the player guesses incorrectly five times, a losing screen appears. \nA player can guess a letter only once. After they've guessed a letter, the program will disable that letter on the onscreen keyboard.",
       "technologies": ["JavaScript", "HTML", "CSS"],
       "liveLink": "https://eduardoaosorio.github.io/oop_game/",
       "githubLink": "https://github.com/eduardoaosorio/oop_game",
@@ -123,7 +123,7 @@
     {
       "id": 0,
       "name": "Random Quote Generator",
-      "description": "Project written in plain JavaScript. It displays a random quote, which refreshes auotomatically every 10 seconds.",
+      "description": "Project written in plain JavaScript. It displays a random quote, which refreshes automatically every 10 seconds.",
       "technologies": ["JavaScript", "HTML", "CSS"],
       "liveLink": "https://eduardoaosorio.github.io/random_quote_generator/",
       "githubLink": "https://github.com/eduardoaosorio/random_quote_generator",
